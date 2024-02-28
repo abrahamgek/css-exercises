@@ -2,24 +2,28 @@
 
 html, body {
   height: 100%;
+  margin: 0;
 }
 
 body {
   font-family: Roboto, sans-serif;
-  margin: 0;
-  background: #aaa;
-  color: #333;
-  /* I'll give you this one for free lol */
   display: flex;
   align-items: center;
   justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .modal {
   background: white;
   width: 480px;
   border-radius: 10px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
 }
 
 .icon {
@@ -35,6 +39,13 @@ body {
   justify-content: center;
 }
 
+.header-text {
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 20px;
+  flex-grow: 1;
+}
+
 .close-button {
   background: #eee;
   border-radius: 50%;
@@ -48,6 +59,17 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  cursor: pointer;
+}
+
+.content {
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
 }
 
 button {
@@ -66,4 +88,8 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.text {
+  margin-bottom: 20px;
 }
